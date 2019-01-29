@@ -1,0 +1,6 @@
+
+Login Page & Forget Password Page: 
+/app/design/adminhtml/default/admintheme/template 
+
+Stylesheet: 
+/skin/adminhtml/default/admintheme/admin_custom.css

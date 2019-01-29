@@ -1,0 +1,167 @@
+/* LOGIN PAGE */
+html,
+body#page-login,
+.login-container,
+.login-box,
+.container,
+.row.eve-content-row,
+.eve-form-col,
+.eve-qoute-col {
+    height: 100%;
+}
+
+
+.login-container {
+    padding-top: 0;
+}
+.login-box {
+    padding-top: 0;
+    background: none;
+}
+.eve-form-col {
+    background: rgba(222,222,222,1);
+    background: -moz-linear-gradient(45deg, rgba(222,222,222,1) 0%, rgba(252,252,252,1) 70%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(222,222,222,1)), color-stop(70%, rgba(252,252,252,1)));
+    background: -webkit-linear-gradient(45deg, rgba(222,222,222,1) 0%, rgba(252,252,252,1) 70%);
+    background: -o-linear-gradient(45deg, rgba(222,222,222,1) 0%, rgba(252,252,252,1) 70%);
+    background: -ms-linear-gradient(45deg, rgba(222,222,222,1) 0%, rgba(252,252,252,1) 70%);
+    background: linear-gradient(45deg, rgba(222,222,222,1) 0%, rgba(252,252,252,1) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedede', endColorstr='#fcfcfc', GradientType=1 );
+    padding: 100px 70px 30px;
+}
+.eve-logo-wrapper {
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+.eve-logo-wrapper .eve-logo-img{
+    max-width: 80%;
+}
+#page-login .form-button,
+#page-login .form-button.forgot-password {
+    /* background: rgb(230, 58, 79); */
+    background: rgb(150, 167, 83);
+    box-shadow: 0px 2px 4px #4e4e4e;
+}
+#page-login .form-button:hover,
+#page-login .form-button.forgot-password:hover {
+    /* background: rgb(189, 43, 61); */
+    background: rgb(118, 132, 65);
+}
+
+/* ----------------------------------------------------------- */
+#page-login .input-box.form-group {
+    position: relative;
+    height: 50px;
+    border: 0;
+    margin-top: 8px !important;
+    color: #2b2b2b;
+    font-weight: 600;
+    padding: 0px !important;
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 1px solid #989898;
+}
+#page-login .form-group input.input-text {
+    padding: 0px;
+    height: auto;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3c3c3c;
+}
+
+input:-internal-autofill-selected {
+    background: transparent !important;  
+}
+
+#page-login .login-form .input-box.first {
+    margin-bottom: 40px;
+} 
+
+#page-login label.form-label {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    color: #a0a0a0 !important;
+    font-weight: normal !important;
+    z-index: 10;
+    font-size: 16px;
+    transition: font-size 150ms ease-out, -webkit-transform 150ms ease-out;
+    transition: transform 150ms ease-out, font-size 150ms ease-out;
+    transition: transform 150ms ease-out, font-size 150ms ease-out, -webkit-transform 150ms ease-out;
+} 
+#page-login .focused label.form-label {
+    -webkit-transform: translateY(-120%);
+    transform: translateY(-120%);
+    font-size: 12px;
+}
+/* ----------------------------------------------------------- */
+#page-login .login-form .input-box i {
+    color: #989898;
+    border-right: 1px solid #989898;
+    display: none;
+}
+
+#page-login .form-buttons a {
+    color: #040404;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}  
+#page-login .legal {
+    color: #040404;
+    border-top: 0px solid #040404;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.eve-qoute-col {
+    background-image: url('/media/imgs/blury-nature-bg-3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: #96a753; */
+    /* background-blend-mode: luminosity; */
+}
+.eve-qoute-wrapper {
+    color: #fff;
+    font-size: 28px;
+    padding: 10px 60px;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(0%) translateY(-50%);
+    width: 100%;
+}
+.eve-qoute-wrapper .eve-qoute {
+    background: #0606068f;
+    padding: 5px;
+}
+.eve-qoute-wrapper .eve-qoute-author {
+    background: #0606068f;
+    padding: 5px;
+    display: inline-block;
+}
+/* RESPONSIVE */
+@media (max-width: 767px) {
+    .login-container {
+        margin: 0;
+        padding: 0;
+    }
+    .eve-qoute-col {
+        display: none;
+    }
+}
+
+/* FORGOTPASSWORD page */
+.login-form .eve-forget-password-text {
+    color: #040404;
+    margin: 0px 0 5px 0;
+    font-size: 18px;
+}
